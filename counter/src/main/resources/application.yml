@@ -1,0 +1,32 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:sqlite:E:\she said\study\code\tutorial\test.db
+    driver-class-name: org.sqlite.JDBC
+  redis:
+    port: 6379
+    host: 101.37.33.222
+    timeout: 6000ms
+    database: 3
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    jdbc-type-for-null: 'null'
+
+# redis缓存过期时间
+cacheexpire:
+  captcha: 100
+  account: 3600
+  order: 36000
+
+# 机器位置
+counter:
+  # 会员ID
+  id: 1000
+  # 机房ID
+  dataCenterId: 0
+  # 机柜ID
+  workerId: 0

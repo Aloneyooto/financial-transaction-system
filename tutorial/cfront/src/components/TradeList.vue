@@ -1,0 +1,132 @@
+<template>
+    <div>
+        <!-- 成交列表 -->
+        <el-table
+            :data="tableData.slice(
+                (query.currentPage - 1) * query.pageSize,
+                query.currentPage * query.pageSize
+            )"
+            border
+            :cell-style="cellStyle"
+            @sort-change="changeTableSort"
+            :default-sort="{prop: 'time', order: 'descending'}"
+        >
+            <!-- 委托时间 股票代码 名称 委托价格 委托数量 方向 状态 -->
+            <el-table-column prop="time" label="成交时间" align="center" sortable :sort-orders="['ascending', 'descending']"/>
+            <el-table-column prop="code" label="股票代码" align="center" />
+            <el-table-column prop="name" label="名称" align="center" />
+            <el-table-column prop="price" label="成交价格(元)" align="center" />
+            <el-table-column prop="amount" label="成交数量(股)" align="center" />
+            <el-table-column prop="totalPrice" label="成交金额(元)" align="center" />
+            <el-table-column prop="direction" label="方向" align="center" />
+            <!-- 撤单按钮 -->
+        </el-table>
+        <!-- 分页控件+刷新按钮 -->
+        <div class="pagination">
+            <!-- 刷新按钮 -->
+            <el-button round
+                type="primary" size="mini"
+                style="margin-top: 2px;float: right"
+                icon="el-icon-refresh"
+                >
+            刷新
+            </el-button>
+            <!-- 分页控件 -->
+            <el-pagination
+                background
+                layout="total, prev, pager, next"
+                :current-page="query.currentPage"
+                :page-size="query.pageSize"
+                :total="dataTotalCount"
+                @current-change="handlePageChange"
+            />
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name:"TradeList",
+        data() {
+            return {
+                query: {
+                    currentPage: 1,//当前页码
+                    pageSize: 2,//每页的记录数
+                },
+                dataTotalCount: 3,//总记录数
+                tableData: [
+                    {
+                        time: '09:55:00',
+                        code: '000001',
+                        name: '平安银行',
+                        price: 100,
+                        amount: 10,
+                        totalPrice: 1000,
+                        direction: '买入',
+                    },
+                    {
+                        time: '09:50:00',
+                        code: '000001',
+                        name: '平安银行',
+                        price: 100,
+                        amount: 10,
+                        totalPrice: 1000,
+                        direction: '买入',
+                    },
+                    {
+                        time: '09:40:00',
+                        code: '000001',
+                        name: '平安银行',
+                        price: 100,
+                        amount: 10,
+                        totalPrice: 1000,
+                        direction: '买入',
+                    }
+                ],
+            }
+        },
+        methods: {
+            cellStyle(row, column, rowIndex, columnIndex) {
+                return "padding:2px";
+            },
+            changeTableSort(column) {
+                let fieldName = column.prop;
+                let sortingType = column.order;
+                if(fieldName === 'time') {
+                    if(sortingType == "descending") {
+                        this.tableData = this.tableData.sort(
+                            (a, b) => {
+                                if(b[fieldName] > a[fieldName]) {
+                                    return 1;
+                                } else if(b[fieldName] === a[fieldName]) {
+                                    return 0;
+                                } else {
+                                    return -1;
+                                }
+                            }
+                        );
+                    } else {
+                        this.tableData = this.tableData.sort(
+                            (a, b) => {
+                                if(a[fieldName] > b[fieldName]) {
+                                    return 1;
+                                } else if(a[fieldName] === b[fieldName]) {
+                                    return 0;
+                                } else {
+                                    return -1;
+                                }
+                            }
+                        );
+                    }
+                } 
+            },
+            handlePageChange(val) {
+                //直接修改无法触发vue进行重绘
+                this.$set(this.query, 'currentPage', val);
+            },
+        },
+    }
+</script>
+
+<style scoped>
+</style>
