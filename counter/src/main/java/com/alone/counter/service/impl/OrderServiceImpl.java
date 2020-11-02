@@ -69,7 +69,20 @@ public class OrderServiceImpl implements OrderService {
         if(oid < 0) {
             return false;
         } else {
-            //TODO 发送网关
+            //1.调整资金持仓数据
+            if(orderCmd.direction == OrderDirection.BUY) {
+                //减少资金
+                DbUtil.minusBalance(orderCmd.uid, orderCmd.price * orderCmd.volume);
+            } else if(orderCmd.direction == OrderDirection.SELL) {
+                //减少持仓
+                DbUtil.minusPosi(orderCmd.uid, orderCmd.code, orderCmd.volume, orderCmd.price);
+            } else {
+                log.error("wrong direction[{}], orderCmd: {}", orderCmd.direction, orderCmd);
+                return false;
+            }
+            //2.生成全局ID 组装ID long[柜台ID, 委托ID]
+
+            //3.打包委托 发送数据
             log.info(orderCmd);
             return true;
         }

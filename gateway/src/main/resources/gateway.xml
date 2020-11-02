@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- .properties文件树形结构表达上有点弱-->
+<gateway>
+
+    <!-- 网关ID -->
+    <id>1001</id>
+
+    <!--外网端口-->
+    <recvport>8091</recvport>
+
+    <!-- 排队机抓取服务端口-->
+    <!--<fetchservport>8890</fetchservport>-->
+
+    <!--柜台连接（课后作业）-->
+    <!--    <counterlist>-->
+    <!--        <counter id="1" conn="127.0.0.1:8091" limiter="50"/>-->
+    <!--    </counterlist>-->
+
+    <!-- 数据库连接（课后作业） -->
+    <!--    <db url="jdbc:sqlite:d:/counter.db" driver="org.sqlite.JDBC"/>-->
+
+</gateway>

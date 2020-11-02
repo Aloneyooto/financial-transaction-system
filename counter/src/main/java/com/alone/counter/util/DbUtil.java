@@ -119,6 +119,25 @@ public class DbUtil {
         }
     }
 
+    /**
+     * 增加资金
+     * @param uid
+     * @return
+     */
+    public static void addBalance(long uid, long balance) {
+        dbUtil.getSqlSessionTemplate().update("orderMapper.updateBalance",
+                ImmutableMap.of("UId", uid, "Balance", balance));
+    }
+
+    /**
+     * 减少资金
+     * @param uid
+     * @param balance
+     */
+    public static void minusBalance(long uid, long balance) {
+        addBalance(uid, -balance);
+    }
+
     //////////////////////////持仓类/////////////////////////////////
 
     public static List<PosiInfo> getPosiList(long uid) {
@@ -140,6 +159,73 @@ public class DbUtil {
             return JsonUtil.fromJsonArr(posiS, PosiInfo.class);
         }
     }
+
+    /**
+     * 查询单个持仓
+     * @param uid
+     * @param code
+     * @return
+     */
+    public static PosiInfo getPosi(long uid, int code) {
+        return dbUtil.getSqlSessionTemplate().selectOne("orderMapper.queryPosi",
+                ImmutableMap.of("UId", uid, "Code", code));
+    }
+
+    /**
+     * 增加持仓
+     * @param uid
+     * @param code
+     * @param volume
+     * @param price
+     */
+    public static void addPosi(long uid, int code, long volume, long price) {
+        //持仓是否存在
+        PosiInfo posiInfo = getPosi(uid, code);
+        if(posiInfo == null) {
+            //新增一条持仓
+            insertPosi(uid, code, volume, price);
+        } else {
+            //修改持仓
+            posiInfo.setCount(posiInfo.getCount() + volume);
+            posiInfo.setCost(posiInfo.getCost() + price * volume);
+//            if(posiInfo.getCount() == 0) { //实际要在当天收盘时才删除
+//                deletePosi(posi);
+//            } else {
+                updatePosi(posiInfo);
+//            }
+        }
+    }
+
+
+    public static void minusPosi(long uid, int code, long volume, long price) {
+        addPosi(uid, code, -volume, price);
+    }
+
+    /**
+     * 添加持仓信息到数据库
+     * @param uid
+     * @param code
+     * @param volume
+     * @param price
+     */
+    private static void insertPosi(long uid, int code, long volume, long price) {
+        dbUtil.getSqlSessionTemplate().insert("orderMapper.insertPosi",
+                ImmutableMap.of("UId", uid,
+                        "Code", code,
+                        "Count", volume,
+                        "Cost", volume * price)
+        );
+    }
+
+    private static void updatePosi(PosiInfo posiInfo) {
+        dbUtil.getSqlSessionTemplate().update("orderMapper.updatePosi",
+                ImmutableMap.of("UId", posiInfo.getUid(),
+                        "Code", posiInfo.getCode(),
+                        "Count", posiInfo.getCount(),
+                        "Cost", posiInfo.getCost())
+        );
+    }
+
 
     //////////////////////////委托类/////////////////////////////////
 

@@ -9,6 +9,11 @@
         where t.uid = #{UId, jdbcType=BIGINT}
     </select>
 
+    <update id="updateBalance" parameterType="Map">
+        update t_user set balance = balance + #{Balance, jdbcType = BIGINT}
+        where uid = #{UId, jdbcType = BIGINT}
+    </update>
+
     <!--持仓类-->
     <select id="queryPosi" resultType="com.alone.counter.bean.res.PosiInfo">
         select
@@ -20,7 +25,32 @@
         t.count
         from t_posi t join t_stock s on t.code = s.code
         where t.uid = #{UId, jdbcType=BIGINT}
+        <if test="Code != null and Code != ''">
+            and t.code = #{Code, jdbcType = integer}
+        </if>
     </select>
+
+    <update id="updatePosi" parameterType="Map">
+        update t_posi
+        set count = #{Count, jdbcType = BIGINT},
+        cost = #{Cost, jdbcType = BIGINT}
+        where uid = #{UId, jdbcType = BIGINT}
+        and code = #{Code, jdbcType = INTEGER}
+    </update>
+
+    <insert id="updatePosi" parameterType="Map">
+        insert into t_posi(
+          uid,
+          code,
+          cost,
+          count
+        ) values (
+          #{UId},
+          #{Code},
+          #{Cost},
+          #{Count}
+        )
+    </insert>
 
     <!--委托类-->
     <select id="queryOrder" resultType="com.alone.counter.bean.res.OrderInfo">
