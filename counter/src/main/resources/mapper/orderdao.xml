@@ -38,7 +38,7 @@
         and code = #{Code, jdbcType = INTEGER}
     </update>
 
-    <insert id="updatePosi" parameterType="Map">
+    <insert id="insertPosi" parameterType="Map">
         insert into t_posi(
           uid,
           code,

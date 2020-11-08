@@ -1,4 +1,4 @@
-package com.alone.counter.util.thirdpart;
+package com.alone.counter.util.thirdpart.uuid;
 
 /**
  * 验证码uuid生成器封装类

@@ -8,8 +8,10 @@ import com.alone.counter.bean.res.OrderInfo;
 import com.alone.counter.bean.res.PosiInfo;
 import com.alone.counter.bean.res.TradeInfo;
 import com.alone.counter.config.CounterConfig;
+import com.alone.counter.config.GatewayConn;
 import com.alone.counter.service.OrderService;
 import com.alone.counter.util.DbUtil;
+import com.alone.counter.util.IDConverter;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,6 +31,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private CounterConfig config;
+
+    @Autowired
+    private GatewayConn gatewayConn;
 
     @Override
     public Long getBalance(long uid) {
@@ -81,8 +86,10 @@ public class OrderServiceImpl implements OrderService {
                 return false;
             }
             //2.生成全局ID 组装ID long[柜台ID, 委托ID]
-
-            //3.打包委托 发送数据
+            orderCmd.oid = IDConverter.combineInt2Long(config.getId(), oid);
+            //3.打包委托 (ordercmd --> commonmsg --> tcp数据流)
+            // 发送数据
+            gatewayConn.sendOrder(orderCmd);
             log.info(orderCmd);
             return true;
         }

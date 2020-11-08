@@ -2,27 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85f1d543-5b28-429c-b863-dca51c9e4c66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/IDConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/OrderCmdContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/handler/ConnHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/handler/MsgHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/handler/MsgHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/bean/CommonMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/bean/MsgConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/checksum/ByteCheckSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/checksum/CheckSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/codec/BodyCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/codec/BodyCodecImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/uuid/GudyUuid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/uuid/SnowflakeIdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/gateway.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/config/GatewayConn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/TcpDirectSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/bean/CommonMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/bean/MsgConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/checksum/ByteCheckSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/checksum/CheckSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/codec/BodyCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/codec/BodyCodecImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/codec/MsgCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/codec/MsgCodecImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayStartup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/CounterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/CounterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/config/CounterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/config/CounterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/service/impl/AccoutServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/service/impl/AccoutServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/DbUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/IDConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/IDConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/GudyUuid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/uuid/GudyUuid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/SnowflakeIdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/uuid/SnowflakeIdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../counter/src/main/resources/mapper/orderdao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/resources/mapper/orderdao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/11.1开发总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/../documents/11.1开发总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter/src/test/java/com/alone/counter/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/test/java/com/alone/counter/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/bean/CommonMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/bean/CommonMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/bean/MsgConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/bean/MsgConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/checksum/ByteCheckSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/checksum/ByteCheckSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/checksum/CheckSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/checksum/CheckSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/codec/BodyCodec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/codec/BodyCodec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/codec/BodyCodecImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/codec/BodyCodecImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/CmdType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/CmdType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderCmd$OrderCmdBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderCmd$OrderCmdBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderCmd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderDirection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/uuid/GudyUuid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/uuid/GudyUuid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/uuid/SnowflakeIdWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/uuid/SnowflakeIdWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test$A.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test$A.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +52,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayStartup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,6 +104,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/handler/ConnHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/OrderCmdContainer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/handler/MsgHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayStartup.java" />
       </list>
     </option>
   </component>
@@ -88,7 +121,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-4" />
     <option name="y" value="13" />
     <option name="width" value="1378" />
@@ -100,6 +133,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,50 +173,6 @@
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="thirdpart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="thirdpart" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="thirdpart" type="462c0819:PsiDirectoryNode" />
-              <item name="checksum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="thirdpart" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -201,8 +192,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,7 +224,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test.test2">
+  <component name="RunManager" selected="Application.GatewayStartup">
+    <configuration name="GatewayStartup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.alone.gateway.bean.GatewayStartup" />
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alone.gateway.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gateway" />
       <option name="PACKAGE_NAME" value="" />
@@ -258,6 +260,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GatewayStartup" />
         <item itemvalue="JUnit.Test.test2" />
         <item itemvalue="JUnit.Test.test1" />
       </list>
@@ -273,7 +276,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604216628320</updated>
-      <workItem from="1604216632382" duration="9806000" />
+      <workItem from="1604216632382" duration="13055000" />
+      <workItem from="1604733111983" duration="9126000" />
+      <workItem from="1604748339403" duration="606000" />
     </task>
     <servers />
   </component>
@@ -295,40 +300,40 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9806000" />
+    <option name="totallyTimeSpent" value="22787000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24981076" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25738078" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3295082" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="leetcode" side_tool="true" />
-      <window_info anchor="right" id="PlantUML" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="leetcode" order="4" side_tool="true" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="PlantUML" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,6 +500,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayStartup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,7 +2,7 @@ package com.alone.counter;
 
 import com.alone.counter.config.CounterConfig;
 import com.alone.counter.util.DbUtil;
-import com.alone.counter.util.thirdpart.GudyUuid;
+import com.alone.counter.util.thirdpart.uuid.GudyUuid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

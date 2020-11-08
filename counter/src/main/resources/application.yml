@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:sqlite:E:\she said\study\code\tutorial\test.db
+    url: jdbc:sqlite:E:\she said\study\code\financial-transaction-system\tutorial\test.db
     driver-class-name: org.sqlite.JDBC
   redis:
     port: 6379
@@ -30,3 +30,14 @@ counter:
   dataCenterId: 0
   # 机柜ID
   workerId: 0
+
+  # TCP直连网关信息
+  sendip: 127.0.0.1
+  sendport: 8091
+  # 网关id
+  gatewayid: 1001
+
+  # 编码解码器
+  checksum: thirdpart.checksum.ByteCheckSumImpl
+  bodycodec: thirdpart.codec.BodyCodecImpl
+  msgcodec: thirdpart.code.MsgCodecImpl

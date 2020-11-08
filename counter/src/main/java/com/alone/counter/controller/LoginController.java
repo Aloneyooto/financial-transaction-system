@@ -7,7 +7,7 @@ import com.alone.counter.cache.CacheType;
 import com.alone.counter.cache.RedisStringCache;
 import com.alone.counter.service.AccountService;
 import com.alone.counter.util.Captcha;
-import com.alone.counter.util.thirdpart.GudyUuid;
+import com.alone.counter.util.thirdpart.uuid.GudyUuid;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

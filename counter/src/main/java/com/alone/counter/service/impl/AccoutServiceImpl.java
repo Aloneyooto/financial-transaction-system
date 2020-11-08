@@ -7,7 +7,7 @@ import com.alone.counter.service.AccountService;
 import com.alone.counter.util.DbUtil;
 import com.alone.counter.util.JsonUtil;
 import com.alone.counter.util.TimeformatUtil;
-import com.alone.counter.util.thirdpart.GudyUuid;
+import com.alone.counter.util.thirdpart.uuid.GudyUuid;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 

@@ -1,13 +1,12 @@
 package com.alone.counter.controller;
 
 import com.alone.counter.bean.res.CaptchaRes;
-import com.alone.counter.bean.res.CounterRes;
 import com.alone.counter.cache.CacheType;
 import com.alone.counter.cache.RedisStringCache;
 import com.alone.counter.util.Captcha;
+import com.alone.counter.util.IDConverter;
 import com.alone.counter.util.TimeformatUtil;
-import com.alone.counter.util.thirdpart.GudyUuid;
-import lombok.ToString;
+import com.alone.counter.util.thirdpart.uuid.GudyUuid;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -39,5 +38,16 @@ public class TestController {
     public void generateDate() {
         Date date = new Date();
         System.out.println(TimeformatUtil.yyyyMMddHHmmss(date));
+    }
+
+    @Test
+    public void testIDConverter() {
+        int high = 1001;
+        int low = 200;
+        long l = IDConverter.combineInt2Long(high, low);
+        System.out.println(l);
+        int[] ints = IDConverter.seperateLong2Int(l);
+        System.out.println(ints[0]);
+        System.out.println(ints[1]);
     }
 }
