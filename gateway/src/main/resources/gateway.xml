@@ -9,7 +9,7 @@
     <recvport>8091</recvport>
 
     <!-- 排队机抓取服务端口-->
-    <!--<fetchservport>8890</fetchservport>-->
+    <fetchserverport>8890</fetchserverport>
 
     <!--柜台连接（课后作业）-->
     <!--    <counterlist>-->

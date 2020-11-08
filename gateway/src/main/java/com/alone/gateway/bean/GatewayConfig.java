@@ -1,5 +1,7 @@
 package com.alone.gateway.bean;
 
+import com.alipay.sofa.rpc.config.ProviderConfig;
+import com.alipay.sofa.rpc.config.ServerConfig;
 import com.alone.gateway.bean.handler.ConnHandler;
 import io.vertx.core.Vertx;
 import io.vertx.core.net.NetServer;
@@ -13,6 +15,7 @@ import org.dom4j.io.SAXReader;
 import sun.security.provider.certpath.Vertex;
 import thirdpart.checksum.CheckSum;
 import thirdpart.codec.BodyCodec;
+import thirdpart.fetchsurv.FetchService;
 
 import java.io.File;
 
@@ -31,6 +34,9 @@ public class GatewayConfig {
 
     //端口
     private int recvPort;
+
+    //排队机端口
+    private int fetchServerPort;
 
     //TODO 柜台列表 数据库连接
 
@@ -53,15 +59,19 @@ public class GatewayConfig {
         //1.端口
         id = Short.parseShort(root.element("id").getText());
         recvPort = Integer.parseInt(root.element("recvport").getText());
-        log.info("GateWay ID:{}, Port:{}", id, recvPort);
+        fetchServerPort = Integer.parseInt(root.element("fetchserverport").getText());
+        log.info("GateWay ID:{}, Port:{}, FetchServerPort : {}", id, recvPort, fetchServerPort);
         //TODO 数据库连接 连接柜台列表
     }
 
     public void startup() {
         //1.启动TCP服务监听
         initRecv();
-        //TODO 2.排队机交互
+        //2.排队机交互
+        initFetchServer();
     }
+
+
 
     private void initRecv() {
         NetServer server = vertx.createNetServer();
@@ -75,5 +85,19 @@ public class GatewayConfig {
         });
     }
 
+    /**
+     * 与排队机交互
+     */
+    private void initFetchServer() {
+        ServerConfig rpcConfig = new ServerConfig()
+                .setPort(fetchServerPort)
+                .setProtocol("bolt");
 
+        ProviderConfig<FetchService> providerConfig = new ProviderConfig<FetchService>()
+                .setInterfaceId(FetchService.class.getName())
+                .setRef(() -> OrderCmdContainer.getInstance().getAll())
+                .setServer(rpcConfig);//绑定FetchService
+        providerConfig.export();
+        log.info("gateway startup fetchServer success at port : {}", fetchServerPort);
+    }
 }

@@ -2,46 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85f1d543-5b28-429c-b863-dca51c9e4c66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/config/GatewayConn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/TcpDirectSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/bean/CommonMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/bean/MsgConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/checksum/ByteCheckSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/checksum/CheckSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/codec/BodyCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/codec/BodyCodecImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/codec/MsgCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/codec/MsgCodecImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayStartup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/CounterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/CounterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/config/CounterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/config/CounterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/service/impl/AccoutServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/service/impl/AccoutServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/IDConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/IDConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/GudyUuid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/uuid/GudyUuid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/SnowflakeIdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/java/com/alone/counter/util/thirdpart/uuid/SnowflakeIdWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/main/resources/mapper/orderdao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/main/resources/mapper/orderdao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../counter/src/test/java/com/alone/counter/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../counter/src/test/java/com/alone/counter/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/fetchsurv/FetchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/bean/FetchTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/bean/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/bean/SeqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/com/alone/seq/SeqStartup1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/com/alone/seq/SeqStartup2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/com/alone/seq/SeqStartup3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/bean/CommonMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/bean/MsgConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/checksum/ByteCheckSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/checksum/CheckSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/codec/BodyCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/codec/BodyCodecImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/fetchsurv/FetchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/CmdType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/OrderCmd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/OrderDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/OrderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/uuid/GudyUuid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/uuid/SnowflakeIdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/resources/seq1.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/resources/seq2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seq/src/main/resources/seq3.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/bean/CommonMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/bean/CommonMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/bean/MsgConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/bean/MsgConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/checksum/ByteCheckSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/checksum/ByteCheckSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/checksum/CheckSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/checksum/CheckSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/codec/BodyCodec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/codec/BodyCodec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/codec/BodyCodecImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/codec/BodyCodecImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/CmdType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/CmdType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderCmd$OrderCmdBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderCmd$OrderCmdBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderDirection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/order/OrderType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/uuid/GudyUuid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/uuid/GudyUuid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/thirdpart/uuid/SnowflakeIdWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thirdpart/uuid/SnowflakeIdWorker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test$A.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test$A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/gateway.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gateway.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,11 +41,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayStartup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="405">
               <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="95" column="88" selection-start-line="95" selection-start-column="88" selection-end-line="95" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,13 +98,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/thirdpart/checksum/ByteCheckSum.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/gateway.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/handler/MsgHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/handler/ConnHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/OrderCmdContainer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/handler/MsgHandlerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayStartup.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/gateway.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java" />
       </list>
     </option>
   </component>
@@ -121,7 +121,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-4" />
     <option name="y" value="13" />
     <option name="width" value="1378" />
@@ -173,6 +173,14 @@
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="thirdpart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -206,6 +214,9 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="thirdpart.fetchsurv" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\she said\study\code\financial-transaction-system\gateway\src\main\resources" />
       <recent name="E:\she said\study\code\financial-transaction-system\gateway\src\main\java\thirdpart" />
@@ -278,7 +289,7 @@
       <updated>1604216628320</updated>
       <workItem from="1604216632382" duration="13055000" />
       <workItem from="1604733111983" duration="9126000" />
-      <workItem from="1604748339403" duration="606000" />
+      <workItem from="1604748339403" duration="2481000" />
     </task>
     <servers />
   </component>
@@ -300,10 +311,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22787000" />
+    <option name="totallyTimeSpent" value="24662000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25738078" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -454,18 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/OrderCmdContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/handler/MsgHandlerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -486,10 +486,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayStartup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="405">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -498,15 +498,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/gateway.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="150">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayStartup.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/OrderCmdContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="296">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../gudytrader/10_委托终端+柜台+网关+排队机代码/gateway/src/main/java/com/gudy/gateway/bean/GatewayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../gudytrader/10_委托终端+柜台+网关+排队机代码/gateway/src/main/java/com/gudy/gateway/bean/OrderCmdContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="95" column="88" selection-start-line="95" selection-start-column="88" selection-end-line="95" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
