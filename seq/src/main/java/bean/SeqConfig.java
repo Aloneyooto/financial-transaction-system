@@ -14,6 +14,9 @@ import com.alipay.sofa.rpc.listener.ChannelListener;
 import com.alipay.sofa.rpc.transport.AbstractChannel;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import io.vertx.core.Vertx;
+import io.vertx.core.datagram.DatagramSocket;
+import io.vertx.core.datagram.DatagramSocketOptions;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -68,6 +71,18 @@ public class SeqConfig {
     @Getter
     private BodyCodec codec;
 
+    //与撮合核心交互的地址
+    @Getter
+    private String multicastIp;
+
+    //与撮合核心交互的端口
+    @Getter
+    private int multicastPort;
+
+    //发送udp包的变量
+    @Getter
+    private DatagramSocket multicastSender;
+
     /**
      * 启动
      */
@@ -78,11 +93,13 @@ public class SeqConfig {
 
         //2.初始化集群
         startSeqDbCluster();
+
         //3.启动下游广播
+        startMultiCast();
+
         //4.初始化网关链接
         startupFetch();
     }
-
 
 
     /**
@@ -99,6 +116,8 @@ public class SeqConfig {
         serverUrl = properties.getProperty("serverurl");
         serverList = properties.getProperty("serverlist");
         fetchUrls = properties.getProperty("fetchurls");
+        multicastIp = properties.getProperty("multicastip");
+        multicastPort = Integer.valueOf(properties.getProperty("multicastport"));
 
         log.info("read config : {}", this);
     }
@@ -178,5 +197,11 @@ public class SeqConfig {
         }
     }
 
+    /**
+     * 发送广播到撮合核心
+     */
+    private void startMultiCast() {
+        multicastSender = Vertx.vertx().createDatagramSocket(new DatagramSocketOptions());
+    }
 
 }

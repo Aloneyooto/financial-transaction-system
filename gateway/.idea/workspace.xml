@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85f1d543-5b28-429c-b863-dca51c9e4c66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/thirdpart/fetchsurv/FetchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/bean/FetchTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/bean/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/bean/SeqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/com/alone/seq/SeqStartup1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/com/alone/seq/SeqStartup2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/com/alone/seq/SeqStartup3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/bean/CommonMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/bean/MsgConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/checksum/ByteCheckSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/checksum/CheckSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/codec/BodyCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/codec/BodyCodecImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/fetchsurv/FetchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/CmdType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/OrderCmd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/OrderDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/order/OrderType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/uuid/GudyUuid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/java/thirdpart/uuid/SnowflakeIdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/resources/seq1.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/resources/seq2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seq/src/main/resources/seq3.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alone/gateway/bean/GatewayConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gateway.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gateway.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seq/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,7 +94,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-4" />
     <option name="y" value="13" />
     <option name="width" value="1378" />
@@ -314,7 +287,7 @@
     <option name="totallyTimeSpent" value="24662000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25738078" />
